@@ -1,6 +1,5 @@
 ### Welcome to Wixels.
-Winning Pixels is the digital portal to all of the solutions created by [WinWin International](http://winwinza.com).  
-Github: [winwinza](https://github.com/winwinza)
+Winning Pixels is a digital solutions company
 
 ### Projects
 [IWIN](https://iwin.wixels.com)
