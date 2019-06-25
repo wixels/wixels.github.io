@@ -1,5 +1,9 @@
-### Welcome to Wixels.
-Winning Pixels is a digital solutions company
+### Wixels 
+We love
+
+* Web
+* Video
+* Coffee
 
 ### Projects
-[IWIN](https://iwin.wixels.com)
+
