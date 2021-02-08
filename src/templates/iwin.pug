@@ -1,0 +1,113 @@
+---
+title: IWIN
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Featured Work
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") IWIN
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") An Integrated Learning Management System
+				.product__box.product__box_show(data-aos="animation-translate-y")
+					.product__category Services Provided
+					ul.product__list
+						li Discovery & Strategy
+						li UI & UX Design
+						li Software Development
+		.product__bg
+			.video-block
+				video(src="img/iwin.mp4" style="width:100%;position:absolute;top:50%;transform:translate(0,-50%);left:0;" muted playsinline loop autoplay)
+				.product__body
+		.product__body
+			.product__center.center
+				.product__box.product__box_hide(data-aos="animation-scale-y")
+					.product__category Services Provided
+					ul.product__list
+						li Discovery & Strategy
+						li Branding
+						li Communication
+						li User Interface
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p In 2017 Wixels Digital built an LMS as part of its product offering. Over the course of 1 year, we built a custom LMS targeted at corporate learning.
+						p The platform is current being used by AB InBev, Oil Libya, Vendanta Zinc, Exxaro and many more.
+						p With over 20 000 active monthly users, and thousands of courses and modules
+						p The IWIN LMS was sold to WinWin Consulting International in 2019.
+				.product__preview
+					img.product__pic.js-parallax(data-scale="1.6" data-orientation="right" src="img/iwin-pic-1.jpg" alt="")
+				.product__review
+					.product__author(data-aos="animation-scale-y")
+	.discover
+		.discover__center.center
+			h2.discover__title.h1(data-aos="animation-scale-y") Discover.
+			.discover__row
+				.discover__item(data-aos="animation-scale-y")
+					.discover__category.h5 Highlights.
+					ul.discover__list
+						li Custom Authuring Tool.
+						li Granualer App Permissions.
+						li GDPR & POPI Complient.
+				.discover__item(data-aos="animation-scale-y" data-aos-delay="200")
+					.discover__category.h5 Tech Stack.
+					ul.discover__list
+						li React, NodeJS, VanillaJS
+						li Google Cloud Compute
+						li TensorFlow
+		.discover__circles
+		+figures
+	.desc
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") What Is IWIN?
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p The IWIN LMS was built from the ground up to service a need that arose in 2017. With existing LMS platforms using outdated tech stacks, we experienced limitations when trying to provide interactive learning experiences (such as VR and AR), so we decided to make our own!
+					p IWIN stands for Information When I Need, is it a methodology developed by WinWin Consulting International, to priorities learning content that is relevant to a learner, as and when they need it, in bite sized chunks.
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") Key Features
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p The IWIN learning management system offers a wide aray of features to corporate clients, including a custom built authuring tool to develop content. In addition to the authuring tool, IWIN also supports other learning files such as xAPI and Scrom 1.4.
+					p All user progress, assessments and tasks are tracked, with the abilities for managers and HR representative to manage user progress, reset modules and assign additional assessment attempts. All information that is tracked can be reported on and extracted, through our custom reporting tools.
+			.desc__list
+				mixin descPreview(src, delay)
+					.desc__preview(data-aos="animation-translate-y" data-aos-delay=delay)
+						img.desc__pic(src=src alt="")
+				+descPreview('img/iwin-pic-2.jpg', '')
+				+descPreview('img/iwin-pic-3.jpg', '200')
+				+descPreview('img/iwin-pic-4.jpg', '')
+			.desc__btns(data-aos="animation-scale-y")
+				button.desc__btn.btn.btn_dark
+					+i('arrow-left')
+					span.btn__text Prev
+				button.desc__btn.btn.btn_purple
+					span.btn__text Next
+					+i('arrow-right')
+	.wrapper.wrapper_gradient
+		.cases.cases_other
+			.cases__center.center
+				.cases__stage.stage(data-aos="animation-scale-y") You may also like
+				h2.cases__title.h1(data-aos="animation-scale-y" data-aos-delay="200") Case <br>Studies.
+				.cases__container
+					.cases__slider.owl-carousel.js-slider-cases
+						mixin casesItem(src, title, subtitle, delay, link)
+							a.cases__item(data-aos="animation-translate-y" data-aos-delay=delay href=link+".html")
+								.cases__preview
+									img.cases__pic(src=src alt="")
+									.cases__box Case <br>Study
+								.cases__body
+									h4.cases__info.h4=title
+									.cases__text=subtitle
+						+casesItem('img/cases-pic-1.jpg', 'Onboarding', 'End to end solution for new recruit onboarding', '', 'onboarding')
+						+casesItem('img/cases-pic-2.jpg', 'Digger App', 'AI Recruitment tool', '200', 'diggerapp')
+						+casesItem('img/cases-pic-4.jpg', 'EOH CEO Awards', 'A rewards and recognition management tool', '200', 'ceoawards')
+			.cases__figures
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.6" data-orientation="up" src="img/figure-2.png" alt="")
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.4" data-orientation="down" src="img/figure-3.png" alt="")
+		+wrapperDark
+    

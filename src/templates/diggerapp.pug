@@ -1,0 +1,118 @@
+---
+title: Digger App
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Featured Work
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Digger App
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") AI Recruitment tool
+				.product__box.product__box_show(data-aos="animation-translate-y")
+					.product__category Services Provided
+					ul.product__list
+						li Discovery & Strategy
+						li UI & UX Design
+						li Software Development
+						li Support & Maintainence
+		.product__bg
+			.video-block
+				video(src="img/digger.mp4" style="width:100%;position:absolute;top:50%;transform:translate(0,-50%);left:0;" muted playsinline loop autoplay)
+				.product__body
+		.product__body
+			.product__center.center
+				.product__box.product__box_hide(data-aos="animation-scale-y")
+					.product__category Services Provided
+					ul.product__list
+						li Discovery & Strategy
+						li Branding
+						li Communication
+						li User Interface
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Wixels digital has been involved in the entire app development process with the company TrueVine Consulting. Wixels, in partnership, developed the brand strategy, the product strategy, the UI/UX design and all the development required to get this app off the line.
+						p Alpha development started in Feb 2017, with the beta being deployed later in that year.
+						p The application saw great success in the mining industry, with Vedanta zinc and Sibanye Stillwater adopting this technology soon after going live. The Digger app went on to win the MTN Enterprise app of the year, as well as being nominated for and winning a spot at UNLEASH conference in Amsterdam
+				.product__preview
+					img.product__pic.js-parallax(data-scale="1.6" data-orientation="right" src="img/amsterdam.jpg" alt="")
+				.product__review
+					.product__author(data-aos="animation-scale-y")
+						.product__ava
+							img.product__pic(src="img/dgr-logo.png" alt="")
+						.product__details
+							.product__man.h5 DiggerApp CEO
+							.product__company Lindi Engelbrecht
+					.product__text.h4(data-aos="animation-scale-y" data-aos-delay="200") “It has been a fantastic journey working with the Wixels team, they have blown us away with their helpfulness, expertise, attention to detail, and work ethic”
+	.discover
+		.discover__center.center
+			h2.discover__title.h1(data-aos="animation-scale-y") Discover.
+			.discover__row
+				.discover__item(data-aos="animation-scale-y")
+					.discover__category.h5 Highlights.
+					ul.discover__list
+						li Native iOS and Android Application.
+						li Winner of 2019 Enterprise App of the year.
+						li Robust and Scalable Infrastructure
+				.discover__item(data-aos="animation-scale-y" data-aos-delay="200")
+					.discover__category.h5 Tech Stack.
+					ul.discover__list
+						li React, NodeJS, VanillaJS
+						li Google Cloud Compute
+						li Kotlin & Swift
+		.discover__circles
+		+figures
+	.desc
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") How it works
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p Candidates are able to build their CV's inside the digger application, we integrated into LinkedIn, Google and Microsoft; this extracts a lot of repetitive data and pre populates it into a users CV. Once a user is loaded onto the system, we are able to intelligently match a candidates skills with any job that is posted onto digger.
+					p With an intelligent matching algorithm we are able to assign a score to the strength of how a persons CV matches a job specifications. This automates the shortlisting process for posted jobs, and reduces pain points for candidates when they apply for jobs that dont match their skillset.
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") Management System
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p A content management system was developed to assist companies and recruiters with managing the entire recruitment process.
+					p This system is used for the creation of jobs, communicating with candidates, tracking the recruitment process, and managing a companies page on the Digger App.
+			.desc__list
+				mixin descPreview(src, delay)
+					.desc__preview(data-aos="animation-translate-y" data-aos-delay=delay)
+						img.desc__pic(src=src alt="")
+				+descPreview('img/desc-pic-5.jpg', '')
+				+descPreview('img/desc-pic-6.jpg', '200')
+				+descPreview('img/desc-pic-7.jpg', '')
+			.desc__btns(data-aos="animation-scale-y")
+				button.desc__btn.btn.btn_dark
+					+i('arrow-left')
+					span.btn__text Prev
+				button.desc__btn.btn.btn_purple
+					span.btn__text Next
+					+i('arrow-right')
+	.wrapper.wrapper_gradient
+		.cases.cases_other
+			.cases__center.center
+				.cases__stage.stage(data-aos="animation-scale-y") You may also like
+				h2.cases__title.h1(data-aos="animation-scale-y" data-aos-delay="200") Our <br>Products.
+				.cases__container
+					.cases__slider.owl-carousel.js-slider-cases
+						mixin casesItem(src, title, subtitle, delay, link)
+							a.cases__item(data-aos="animation-translate-y" data-aos-delay=delay href=link+".html")
+								.cases__preview
+									img.cases__pic(src=src alt="")
+									.cases__box Case <br>Study
+								.cases__body
+									h4.cases__info.h4=title
+									.cases__text=subtitle
+						+casesItem('img/cases-pic-1.jpg', 'Onboarding', 'End to end solution for new recruit onboarding', '', 'onboarding')
+						+casesItem('img/cases-pic-3.jpg', 'IWIN', 'An Integrated Learning Management System', '', 'iwin')
+						+casesItem('img/cases-pic-4.jpg', 'EOH CEO Awards', 'A rewards and recognition management tool', '200', 'ceoawards')
+			.cases__figures
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.6" data-orientation="up" src="img/figure-2.png" alt="")
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.4" data-orientation="down" src="img/figure-3.png" alt="")
+		+wrapperDark

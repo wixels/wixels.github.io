@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Digger App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ui8">
+    <meta name="twitter:title" content="Folio Designer">
+    <meta name="twitter:description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+    <meta name="twitter:creator" content="@ui8">
+    <meta name="twitter:image" content="https://ui8-folio.herokuapp.com/img/twitter-card.jpg">
+    <meta property="og:title" content="Folio Designer">
+    <meta property="og:type" content="Article">
+    <meta property="og:url" content="https://ui8.net/ui8/products/folio-designer">
+    <meta property="og:image" content="https://ui8-folio.herokuapp.com/img/fb-og-image.jpg">
+    <meta property="og:description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+    <meta property="og:site_name" content="Folio Designer">
+    <meta property="fb:admins" content="132951670226590">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta)
+      {
+        if (screen.width < 375)
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        }
+        else
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header js-header" id="header">
+        <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic" src="img/logo.svg" alt="" /></a>
+          <div class="header__social header__social_main"></div><button class="header__burger js-header-burger header__burger_dark"></button>
+        </div>
+        <div class="header__wrapper js-header-wrapper">
+          <div class="header__preview"><a class="header__logo" href="index.html"><img class="header__pic" src="img/logo-white.svg" alt="" /></a>
+            <div class="header__img"><img class="header__pic" src="img/bg-header.png" alt="" /></div>
+          </div>
+          <div class="header__center center">
+            <div class="header__contacts"><a class="header__line" href="mailto:hello@wixels.com">
+                <div class="header__icon"><svg class="icon icon-email">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg></div>
+                <div class="header__text">hello@wixels.com</div>
+              </a>
+              <div class="header__line">
+                <div class="header__icon"><svg class="icon icon-place">
+                    <use xlink:href="img/sprite.svg#icon-place"></use>
+                  </svg></div>
+                <div class="header__text">
+                  <p>The Buzz Shopping Centre</p>
+                  <p>Witkoppen Rd, Fourways</p>
+                </div>
+              </div><a class="header__line" href="tel:(+27)79 839 6004">
+                <div class="header__icon"><svg class="icon icon-phone">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg></div>
+                <div class="header__text">(+27)79 839 6004</div>
+              </a>
+            </div>
+            <nav class="header__nav"><a class="js-clickable header__item" href="/#details"><span>About</span></a><a class="js-clickable header__item" href="/#cases"><span>Work</span></a><a class="js-clickable header__item" href="/#contact"><span>Contact</span></a></nav>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product__head">
+          <div class="product__center center">
+            <div class="product__wrap">
+              <div class="product__stage stage" data-aos="animation-scale-y">Featured Work</div>
+              <h1 class="product__title title h1" data-aos="animation-scale-y" data-aos-delay="150">Digger App</h1>
+              <div class="product__info h5" data-aos="animation-scale-y" data-aos-delay="300">AI Recruitment tool</div>
+            </div>
+            <div class="product__box product__box_show" data-aos="animation-translate-y">
+              <div class="product__category">Services Provided</div>
+              <ul class="product__list">
+                <li>Discovery & Strategy</li>
+                <li>UI & UX Design</li>
+                <li>Software Development</li>
+                <li>Support & Maintainence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product__bg">
+          <div class="video-block"><video src="img/digger.mp4" style="width:100%;position:absolute;top:50%;transform:translate(0,-50%);left:0;" muted playsinline loop autoplay></video>
+            <div class="product__body"></div>
+          </div>
+        </div>
+        <div class="product__body">
+          <div class="product__center center">
+            <div class="product__box product__box_hide" data-aos="animation-scale-y">
+              <div class="product__category">Services Provided</div>
+              <ul class="product__list">
+                <li>Discovery & Strategy</li>
+                <li>Branding</li>
+                <li>Communication</li>
+                <li>User Interface</li>
+              </ul>
+            </div>
+            <div class="product__row">
+              <div class="product__overview h4" data-aos="animation-scale-y">Overview</div>
+              <div class="product__content content" data-aos="animation-scale-y" data-aos-delay="200">
+                <p>Wixels digital has been involved in the entire app development process with the company TrueVine Consulting. Wixels, in partnership, developed the brand strategy, the product strategy, the UI/UX design and all the development required to get this app off the line.</p>
+                <p>Alpha development started in Feb 2017, with the beta being deployed later in that year.</p>
+                <p>The application saw great success in the mining industry, with Vedanta zinc and Sibanye Stillwater adopting this technology soon after going live. The Digger app went on to win the MTN Enterprise app of the year, as well as being nominated for and winning a spot at UNLEASH conference in Amsterdam</p>
+              </div>
+            </div>
+            <div class="product__preview"><img class="product__pic js-parallax" data-scale="1.6" data-orientation="right" src="img/amsterdam.jpg" alt=""></div>
+            <div class="product__review">
+              <div class="product__author" data-aos="animation-scale-y">
+                <div class="product__ava"><img class="product__pic" src="img/dgr-logo.png" alt=""></div>
+                <div class="product__details">
+                  <div class="product__man h5">DiggerApp CEO</div>
+                  <div class="product__company">Lindi Engelbrecht</div>
+                </div>
+              </div>
+              <div class="product__text h4" data-aos="animation-scale-y" data-aos-delay="200">“It has been a fantastic journey working with the Wixels team, they have blown us away with their helpfulness, expertise, attention to detail, and work ethic”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discover">
+        <div class="discover__center center">
+          <h2 class="discover__title h1" data-aos="animation-scale-y">Discover.</h2>
+          <div class="discover__row">
+            <div class="discover__item" data-aos="animation-scale-y">
+              <div class="discover__category h5">Highlights.</div>
+              <ul class="discover__list">
+                <li>Native iOS and Android Application.</li>
+                <li>Winner of 2019 Enterprise App of the year.</li>
+                <li>Robust and Scalable Infrastructure</li>
+              </ul>
+            </div>
+            <div class="discover__item" data-aos="animation-scale-y" data-aos-delay="200">
+              <div class="discover__category h5">Tech Stack.</div>
+              <ul class="discover__list">
+                <li>React, NodeJS, VanillaJS</li>
+                <li>Google Cloud Compute</li>
+                <li>Kotlin & Swift</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="discover__circles"></div>
+        <div class="figures">
+          <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="" /></div>
+          <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.6" data-orientation="up" src="img/figures-2.png" alt="" /></div>
+          <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3" data-orientation="up" src="img/figures-3.png" alt="" /></div>
+          <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="" /></div>
+          <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3" data-orientation="down" src="img/figures-5.png" alt="" /></div>
+          <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2" data-orientation="up" src="img/figures-6.png" alt="" /></div>
+        </div>
+      </div>
+      <div class="desc">
+        <div class="desc__center center">
+          <div class="desc__head">
+            <div class="desc__title h4" data-aos="animation-scale-y">How it works</div>
+            <div class="desc__content content" data-aos="animation-scale-y" data-aos-delay="200">
+              <p>Candidates are able to build their CV's inside the digger application, we integrated into LinkedIn, Google and Microsoft; this extracts a lot of repetitive data and pre populates it into a users CV. Once a user is loaded onto the system, we are able to intelligently match a candidates skills with any job that is posted onto digger.</p>
+              <p>With an intelligent matching algorithm we are able to assign a score to the strength of how a persons CV matches a job specifications. This automates the shortlisting process for posted jobs, and reduces pain points for candidates when they apply for jobs that dont match their skillset.</p>
+            </div>
+          </div>
+        </div>
+        <div class="desc__center center">
+          <div class="desc__head">
+            <div class="desc__title h4" data-aos="animation-scale-y">Management System</div>
+            <div class="desc__content content" data-aos="animation-scale-y" data-aos-delay="200">
+              <p>A content management system was developed to assist companies and recruiters with managing the entire recruitment process.</p>
+              <p>This system is used for the creation of jobs, communicating with candidates, tracking the recruitment process, and managing a companies page on the Digger App.</p>
+            </div>
+          </div>
+          <div class="desc__list">
+            <div class="desc__preview" data-aos="animation-translate-y" data-aos-delay=""><img class="desc__pic" src="img/desc-pic-5.jpg" alt=""></div>
+            <div class="desc__preview" data-aos="animation-translate-y" data-aos-delay="200"><img class="desc__pic" src="img/desc-pic-6.jpg" alt=""></div>
+            <div class="desc__preview" data-aos="animation-translate-y" data-aos-delay=""><img class="desc__pic" src="img/desc-pic-7.jpg" alt=""></div>
+          </div>
+          <div class="desc__btns" data-aos="animation-scale-y"><button class="desc__btn btn btn_dark"><svg class="icon icon-arrow-left">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg><span class="btn__text">Prev</span></button><button class="desc__btn btn btn_purple"><span class="btn__text">Next</span><svg class="icon icon-arrow-right">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg></button></div>
+        </div>
+      </div>
+      <div class="wrapper wrapper_gradient">
+        <div class="cases cases_other">
+          <div class="cases__center center">
+            <div class="cases__stage stage" data-aos="animation-scale-y">You may also like</div>
+            <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="200">Our <br>Products.</h2>
+            <div class="cases__container">
+              <div class="cases__slider owl-carousel js-slider-cases"><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="" href="onboarding.html">
+                  <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-1.jpg" alt="">
+                    <div class="cases__box">Case <br>Study</div>
+                  </div>
+                  <div class="cases__body">
+                    <h4 class="cases__info h4">Onboarding</h4>
+                    <div class="cases__text">End to end solution for new recruit onboarding</div>
+                  </div>
+                </a><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="" href="iwin.html">
+                  <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-3.jpg" alt="">
+                    <div class="cases__box">Case <br>Study</div>
+                  </div>
+                  <div class="cases__body">
+                    <h4 class="cases__info h4">IWIN</h4>
+                    <div class="cases__text">An Integrated Learning Management System</div>
+                  </div>
+                </a><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="200" href="ceoawards.html">
+                  <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-4.jpg" alt="">
+                    <div class="cases__box">Case <br>Study</div>
+                  </div>
+                  <div class="cases__body">
+                    <h4 class="cases__info h4">EOH CEO Awards</h4>
+                    <div class="cases__text">A rewards and recognition management tool</div>
+                  </div>
+                </a></div>
+            </div>
+          </div>
+          <div class="cases__figures">
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.6" data-orientation="up" src="img/figure-2.png" alt=""></div>
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.4" data-orientation="down" src="img/figure-3.png" alt=""></div>
+          </div>
+        </div>
+        <div class="wrapper wrapper_dark">
+          <div class="contacts" id="contact">
+            <div class="contacts__center center">
+              <div class="contacts__container">
+                <div class="contacts__wrap">
+                  <div class="contacts__stage stage" data-aos="animation-scale-y">Say hello 👋</div>
+                  <h2 class="contacts__title h1" data-aos="animation-scale-y" data-aos-delay="200">Let’s Work <br>Together.</h2>
+                  <div class="contacts__info" data-aos="animation-scale-y" data-aos-delay="400">We'd love to meet up with you to discuss your project!</div>
+                </div>
+                <div class="contacts__row">
+                  <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line" href="mailto:hello@wixels.com">
+                      <div class="contacts__icon"><svg class="icon icon-email">
+                          <use xlink:href="img/sprite.svg#icon-email"></use>
+                        </svg></div>
+                      <div class="contacts__text">hello@wixels.com</div>
+                    </a>
+                    <div class="contacts__line">
+                      <div class="contacts__icon"><svg class="icon icon-place">
+                          <use xlink:href="img/sprite.svg#icon-place"></use>
+                        </svg></div>
+                      <div class="contacts__text">
+                        <p>The Buzz Shopping Centre</p>
+                        <p>Witkoppen Rd, Fourways</p>
+                      </div>
+                    </div><a class="contacts__line" href="tel:(+27)79 839 6004">
+                      <div class="contacts__icon"><svg class="icon icon-phone">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg></div>
+                      <div class="contacts__text">(+27)79 839 6004</div>
+                    </a>
+                  </div>
+                  <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><input class="field__input" type="text" name="name" placeholder="Name" />
+                        <div class="field__icon"><svg class="icon icon-profile">
+                            <use xlink:href="img/sprite.svg#icon-profile"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><input class="field__input" type="email" name="email" placeholder="Email" />
+                        <div class="field__icon"><svg class="icon icon-send">
+                            <use xlink:href="img/sprite.svg#icon-send"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><select class="field__select" name="category">
+                          <option>App Development</option>
+                          <option>Website</option>
+                          <option>UI & UX Design</option>
+                          <option>Custom Developement</option>
+                        </select>
+                        <div class="field__icon"><svg class="icon icon-arrows">
+                            <use xlink:href="img/sprite.svg#icon-arrows"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field field_textarea">
+                      <div class="field__wrap"><textarea class="field__textarea" name="message" placeholder="Message"></textarea>
+                        <div class="field__icon"><svg class="icon icon-message">
+                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__btn"><button class="btn btn_purple" data-submit="sendEmail"><span class="btn__text">Let’s Talk</span><svg class="icon icon-arrow-right">
+                          <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                        </svg></button></div>
+                  </form>
+                </div>
+                <div class="contacts__category h5">Let’s connect</div>
+                <div class="contacts__social"></div>
+                <div class="figures">
+                  <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.6" data-orientation="up" src="img/figures-2.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3" data-orientation="up" src="img/figures-3.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3" data-orientation="down" src="img/figures-5.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2" data-orientation="up" src="img/figures-6.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer__center center">
+              <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic" src="img/logo-empty.svg" alt="" /></a>
+                <div class="footer__wrap">
+                  <div class="footer__title h1">You only have one chance to make a first impression.</div>
+                  <div class="footer__info h4">Let’s make it an amazing one.</div>
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <div class="footer__copyright">© 2021, Wixels Digital.</div><a class="footer__scroll js-scroll" href="#header">Back to top</a>
+              </div>
+            </div>
+            <div class="footer__bg">
+              <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.5" data-orientation="down" src="img/footer-cube-1.png" alt="" /></div>
+              <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.8" data-orientation="up" src="img/footer-cube-1.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cursor"></div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
