@@ -1174,6 +1174,12 @@ body:not(.touch-device) .owl-item:hover .details__preview { -webkit-transform: s
 
 .contacts__form { -ms-flex-negative: 0; flex-shrink: 0; width: 468px; }
 
+.contacts__feedback { height: 72px; padding: 20px; text-align: center; }
+
+.contacts__feedback .success { color: #15b515; }
+
+.contacts__feedback .fail { color: #b51515; }
+
 .contacts__field:not(:last-child) { margin-bottom: 24px; }
 
 .contacts__category { display: none; }
