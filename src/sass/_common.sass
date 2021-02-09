@@ -469,7 +469,7 @@ a.btn
     display: flex
     flex-direction: column
     align-items: flex-start
-    margin-top: -15px
+    margin-top: 30px
   &__item
     overflow: hidden
     font-size: 72px
@@ -498,7 +498,7 @@ a.btn
       +d
         margin-bottom: 8px
       +m
-        margin-bottom: 0
+        margin-bottom: 25px
   &__wrapper.visible &__item
     span
       transform: translateX(0)
@@ -2473,9 +2473,18 @@ body:not(.touch-device) .owl-item:hover .details__preview
 
 .video-block
   position: relative;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
-  max-height: 70vh;
+  video
+    +m
+      min-width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      left: 0;
+      min-height: 100%;
+
+
 
 .discover
   position: relative
