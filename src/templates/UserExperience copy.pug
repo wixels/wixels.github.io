@@ -1,0 +1,71 @@
+---
+title: User Experience
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Our Skillsets
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") User Experience Design
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") Overview
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p User experience is a key consideration in any website or app development process, amazing functionality and beatiful design fall short when the user experience is over looked.
+					p For these reasons, we put a lot of time and effort into making sure the user experience is a key priority when design an application or website.
+				
+		.desc__center.center
+			.desc__head
+				.desc__title.h4(data-aos="animation-scale-y") Our Process
+				.desc__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+					p Great time and effort is spent, with our design team and development team, to become though leaders in the user experience space. Continuous improvement is key in our day to day operations.
+					p Additionally, we spent time in research and development at the beginning of each development project, wireframes and user flows are developed to test each touch point and guage interaction, before any design elements are developed.
+	.review
+		.review__center.center
+			.review__stage.stage(data-aos="animation-scale-y") Our Expertise
+			h2.review__title.title.h1(data-aos="animation-scale-y" data-aos-delay="200") The tools we use.
+			.review__container(data-aos="animation-translate-y" data-aos-delay="400")
+				.review__slider.owl-carousel.js-slider-tech
+					.review__item
+						.review__text 
+						.review__author
+							.review__ava
+								img.review__pic(src="img/ux/xd.png" alt="")
+							.review__details
+								.review__man.h5 XD
+								.review__company Adobe
+					.review__item
+						.review__text 
+						.review__author
+							.review__ava
+								img.review__pic(src="img/ux/sketch.png" alt="")
+							.review__details
+								.review__man.h5 Sketch
+								.review__company Sketch B.V
+					.review__item
+						.review__text 
+						.review__author
+							.review__ava
+								img.review__pic(src="img/ux/figma.png" alt="")
+							.review__details
+								.review__man.h5 Figma
+								.review__company Figma Design
+					.review__item
+						.review__text
+						.review__author
+							.review__ava
+								img.review__pic(src="img/ux/invision.png" alt="")
+							.review__details
+								.review__man.h5 InVision
+								.review__company InVision
+		.review__bg
+	.wrapper.wrapper_gradient
+		.cases.cases_other
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.6" data-orientation="up" src="img/figure-2.png" alt="")
+				.cases__figure
+					img.cases__pic.js-parallax(data-scale="1.4" data-orientation="down" src="img/figure-3.png" alt="")
+		+wrapperDark
